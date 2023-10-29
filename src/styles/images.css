@@ -1,0 +1,74 @@
+.perfil{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+#navbar-brand{
+    margin: auto;
+}
+.link{
+    color: gray;
+    text-decoration: none;
+
+}
+.imagenProfile{
+    margin-top: 2%;
+}
+ .navbar-nav{
+    display: flex ;
+    align-items: center;
+}
+.menuNavbar{
+    border: none;
+    background-color: white;
+}
+.menuNavbar{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.navbar-nav .dropdown-menu{
+    position: absolute;
+}
+.navbar-toggler-icon{
+
+    background-position: 80;
+    background-image: url('./imgs/js.png');
+    background-size: cover;
+}
+.navbar-toggler-icon:active{
+    animation: rotar .4s infinite;
+    
+}
+/* cards */
+.containerDiv{
+    margin: 5% auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+gap: 1rem;
+}
+.program{
+    background: transparent;
+    border: none;
+}
+.cardProyectos{
+    width: 300px;
+    filter: brightness(30%);
+    transition: .5s;
+    
+}
+.cardProyectos:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(100%);
+    
+}
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
+}
