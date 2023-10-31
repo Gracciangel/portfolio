@@ -13,3 +13,53 @@ body {
 	background: #222222;
 	overflow: hidden;
 }
+/* formulario */
+.containerForm{
+	margin:10%  ;
+}
+.containerForm .formulario{
+	text-align: center;
+}
+.containerForm .formulario .btn{
+	margin-top: 5%;
+}
+.containerForm .formulario .textarea{
+	margin-top: 3%;
+	color: black;
+}
+.containerForm .buttons{
+	display: flex;
+	align-items: center;
+	justify-content:space-evenly;
+}
+ a .wsp{
+	width: 50px;
+	transition: .5s;
+	position: absolute;
+	top: 17%;
+	right: 14%;
+}
+
+ a .wsp:hover{
+	transform: scale(1.07);
+}
+
+/* presentacion */
+.containerPresentacion{
+	color: aliceblue;
+	padding: 5% 5% 0;
+}
+.presentacionTech{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.presentacionTech img {
+	width: 50px;
+}
+.containerPresentacion h2{
+	text-align: center;
+}
+
+

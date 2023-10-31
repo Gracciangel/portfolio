@@ -20,21 +20,21 @@ export const Menu = () => {
           <Nav className="me-auto">
             {/* home */}
             <Nav.Item>
-            {/* contact */}
+            {/* home */}
           <Nav.Link >
               <Link className='link' to={'/'}>Home</Link >
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            {/* contact */}
-          <Nav.Link >
-              <Link className='link' to={'/contact'}>Contacto</Link >
-            </Nav.Link>
-          </Nav.Item>
-            {/* proyect */}
+            {/* proyectos */}
           <Nav.Item>
           <Nav.Link>
               <Link className='link' to={'/proyect'}>Proyecto</Link>
+            </Nav.Link>
+          </Nav.Item>
+            {/* contacto */}
+            <Nav.Item>
+          <Nav.Link >
+              <Link className='link' to={'/contact'}>Contacto</Link >
             </Nav.Link>
           </Nav.Item>
          <Dropdown>

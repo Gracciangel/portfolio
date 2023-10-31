@@ -8,15 +8,23 @@
 }
 .cardProyectos .imgCard{
     width: 300px;
-    
-    transition: .5s;
     filter: grayscale(90%);
+    transition: .3s;
 }
 .cardProyectos .imgCard:hover{
     scale: 1.1;
     filter: grayscale(0);
     cursor: pointer;
 }
+/* menuDrop */
+.dropdown-menu{
+    background: transparent;
+    border: none;
+}
+.dropdown-menu a{
+    color: white;
+}
+
 
 /* info */
 .tecnoligias{
@@ -42,12 +50,14 @@
     padding: 4px;   
     transition: .2s;
     border-radius: 15px;
+    transform: rotate(45deg);
 }
 
 .tecnoligias .close:hover{
     cursor: pointer;
     scale: 2.2;
     background-color: rgba(230, 142, 142, 0.888);
+    transform: rotate(360deg);
 }
 .tecnoligias div{
     margin-top:2% ;
@@ -59,23 +69,33 @@
 }
 .containerInfo{
     position: absolute;
+    top: 5%;
     width: 100%;
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(139, 128, 128, 0.665);
     padding: 2rem;
-    border-radius: 50px;
     
+}
+.containerInfo h2{
+    color: white;
+    text-align: center;
 }
 .containerInfo p {
     text-align: center;
     color: white;
 }
 .positionCard{
-  animation: animated .2s forwards;
-  
+    width: 300px;
+    position: relative;
+    transition: .4s;    
+    animation: animated .3s forwards;
+
+
 }
-.divEnlaces{
+.tecnoligias .divEnlaces{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .divEnlaces img{
     transition: .3s;
@@ -85,18 +105,36 @@
     scale: 1.1;
     filter: grayscale(0);
 }
+/* messeges */
 
+.messegeProfile{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+.messegeClose{
+    position: absolute;
+    top: 22%;
+    right:40%;
+}
+.messegeGit{
+    position: absolute;
+    top: 37%;
+    right:70%;
+}
+.messegeWeb{
+    position: absolute;
+    top: 37%;
+    left: 70%;
+}
+
+
+/* animations */
 @keyframes animated
 {   
-    from{
-        position: relative;
-        rotate: 0deg;
-    }
-
-    to{
-        position: absolute;
-        z-index: 2;
-        width: 80%;
-        filter: blur(8px);
-    }
+   100%{
+    z-index: 2;
+    filter: opacity(10%);
+    /* filter: blur(10px); */
+   }
 }

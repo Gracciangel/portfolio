@@ -4,6 +4,7 @@ import {App} from './App'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom' ;
 import { Proyects } from './components/Proyects';
 import { Contact } from './components/Contact';
+import { Enviado } from './components/Enviado';
 
 
 const router=  createBrowserRouter([
@@ -18,6 +19,10 @@ const router=  createBrowserRouter([
   {
     path:'/contact',
     element: <Contact/> 
+  },
+  {
+    path:'/send',
+    element:<Enviado/>
   }
 ])
 

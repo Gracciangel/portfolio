@@ -50,7 +50,7 @@ export const proyectos = [
     {
         id: 1,
         titulo: 'Centro de Salud',
-        desc: 'Desarrollado en grupo, para un proyecto final de curso donde pusimo en juego varias tecnologias',
+        desc: 'Desarrollado en grupo, para un proyecto final de curso donde usamos varias tecnologias.',
         urlMiniatura: '../imgs/centroSalud.png',
         repo: 'https://github.com/ian-cuba/Proyecto_CaC',
         route: 'https://centrosaludintegral.netlify.app/',
@@ -63,7 +63,7 @@ export const proyectos = [
     {
         id: 2,
         titulo: 'Batalla Naval',
-        desc: 'Pequeño proyecto creado con motivos educativos el mismo requiere mantenimiento y actualizacion',
+        desc: 'Pequeño proyecto creado con motivos educativos, el mismo requiere mantenimiento y actualizacion.',
         urlMiniatura: '../imgs/batallaNaval.png',
         repo: 'https://github.com/Gracciangel/batallaNaval',
         route: 'https://thunderous-palmier-a89bee.netlify.app/',
@@ -95,11 +95,17 @@ export const icons=[
     },
     {
         close: '../imgs/cerrar.png'
+    },
+    {
+        wsp: '../imgs/wsp.png'
+    },
+    {
+        send: '../imgs/send.png'
     }
 ]
 
 export const doc ={
-    cv: '../imgs/doc/Angel_MugracciCV.pdf'
+    cv: '../doc/Angel_MugracciCV.pdf'
 }
 
 export const imagesPerfil = {

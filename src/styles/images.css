@@ -2,12 +2,11 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    transition: .5s;
+    transition: .2s;
     filter: grayscale(100%);
 }
 .perfil:hover{
     cursor: pointer;
-    scale: 1.1;
     filter: grayscale(10%);
 }
 .closeBtn{
@@ -103,11 +102,36 @@
     width: 30px;
 }
 
+/* send */
+
+.imgSend{
+    position: absolute;
+    width: 70px;
+    margin-top:10% ;
+    animation-delay: .2s;
+    animation-name: showSend;
+    animation-duration: .3s;
+    /* animation: forwards; */
+    
+}
+@keyframes showSend{
+    from{
+        scale: 2.2  ;
+        rotate: 0deg;
+    }
+    to{
+        rotate:360deg ;
+        
+    }
+}
+
+
 @keyframes rotar{
     from{
         transform: rotate(0deg);
     }
     to{
         transform: rotate(30deg);
+        
     }
 }

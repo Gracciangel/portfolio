@@ -4,10 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import { proyectos, icons } from '../assets/data';
 import '../styles/proyectosStyles.css'
-
+import { Messege } from './Messege';
 
 export const Proyects = () => {
-
+  const[ShowMessegeClose, setShowMessegeClose] = useState(false)
+  const[ShowMessegeGit, setShowMessegeGit] = useState(false)
+  const[ShowMessegeWeb, setShowMessegeWeb] = useState(false)
   const [projectStates, setProjectStates] = useState(proyectos.map(() => false));
   const [classCardStates, setClassCardStates] = useState(proyectos.map(() => false));
 
@@ -44,6 +46,7 @@ export const Proyects = () => {
                   projectStates[index] && 
             <div className='containerInfo'>
                   <>
+                    <h2>{e.titulo}</h2>
                     <p>{e.desc}</p>
                     <div className='tecnoligias'>
 
@@ -52,17 +55,37 @@ export const Proyects = () => {
                     
                     className='close'
                     onClick={()=>handleProjectClick(index)}
+                    onMouseEnter={()=>setShowMessegeClose(!ShowMessegeClose)}
+                    onMouseOut={()=>setShowMessegeClose(!ShowMessegeClose)}
+                    
                     />  
+                    {
+                      ShowMessegeClose && <Messege type={'danger'} style={'messegeClose'} messege={'Cerrar'}/>
+                    }
                     <div className="divEnlaces">
                      
                     {/* enlace repo */}
                     <a href={e.repo} target="_blank" rel="noopener noreferrer">
-                      <img src={e.git} alt="" />
+                      <img src={e.git} alt="" 
+                          onMouseEnter={()=>setShowMessegeGit(!ShowMessegeGit)}
+                          onMouseOut={()=>setShowMessegeGit(!ShowMessegeGit)}
+                      />
+                   
                     </a>
+                    {
+                        ShowMessegeGit && <Messege type={'primary'} style={'messegeGit'} messege={'Ver Repo'}/>
+                      }
                     {/* enlace web */}
                     <a href={e.route} target="_blank" rel="noopener noreferrer">
-                      <img src={e.web} alt="" />
+                      <img src={e.web} alt="" 
+                        onMouseEnter={()=>setShowMessegeWeb(!ShowMessegeWeb)}
+                        onMouseOut={()=>setShowMessegeWeb(!ShowMessegeWeb)}
+                      />
+                      
                     </a>
+                    {
+                        ShowMessegeWeb && <Messege type={'warning'} style={'messegeWeb'} messege={'Ir al sitio'}/>
+                      }
                     </div>
                     <div className='divSubtitle'>
                     <h3>tecnologias usadas</h3>
