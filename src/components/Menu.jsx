@@ -5,6 +5,7 @@ import '../styles/images.css'
 import { Perfil } from './Perfil';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { icons } from '../assets/data';
 export const Menu = () => {
   
 
@@ -42,12 +43,12 @@ export const Menu = () => {
           </Dropdown.Toggle>
           <Dropdown.Menu className='drop'>
             {/* github */}
-            <Dropdown.Item href='https://github.com/Gracciangel' className='dropTitle'>
-              GitHub
+            <Dropdown.Item href='https://github.com/Gracciangel' target='_blank' className='dropTitle'>
+              GitHub <img src={icons[0].git} alt=""className='imgMenu' />
             </Dropdown.Item>
             {/* linkedin */}
-            <Dropdown.Item href='https://www.linkedin.com/in/angel-mugracci/' className='dropTitle'>
-              Linkedin
+            <Dropdown.Item href='https://www.linkedin.com/in/angel-mugracci/' target='_blank' className='dropTitle'>
+              Linkedin <img src={icons[1].lin} alt=""className='imgMenu' />
             </Dropdown.Item>
           </Dropdown.Menu>
          </Dropdown>
