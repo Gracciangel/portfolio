@@ -8,7 +8,7 @@ import { Messege } from './Messege';
 
 
 export const Perfil = () =>{
-  const[ShowMessege, setShowMessege] = useState(false)
+  const[ShowMessegePerfil, setShowMessegePerfil] = useState(false)
 
 
 
@@ -19,13 +19,13 @@ export const Perfil = () =>{
       {
         <a href={doc.cv} download={doc.cv}>
           <Image src={imagesPerfil.perfil} roundedCircle className='perfil'
-            onMouseEnter={()=>setShowMessege(!ShowMessege)}
-            onMouseOut={()=>setShowMessege(!ShowMessege)}
+            onMouseEnter={()=>setShowMessegePerfil(!ShowMessegePerfil)}
+            onMouseOut={()=>setShowMessegePerfil(!ShowMessegePerfil)}
             
 
         />
         {
-          ShowMessege && <Messege type={'success'} messege={'click para descargar el CV '} style={'messegeProfile'} />
+          ShowMessegePerfil && <Messege type={'success'} messege={'click para descargar el CV '} style={'messegeProfile'} />
           
         }
         </a>

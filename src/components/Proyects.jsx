@@ -20,6 +20,7 @@ export const Proyects = () => {
     const newClass = [...classCardStates];
     newClass[index] = !newClass[index];
     setClassCardStates(newClass);
+    setShowMessegeClose(false)
   };
 
 
@@ -54,9 +55,10 @@ export const Proyects = () => {
                     <img src={icons[2].close} alt="" 
                     
                     className='close'
-                    onClick={()=>handleProjectClick(index)}
-                    onMouseEnter={()=>setShowMessegeClose(!ShowMessegeClose)}
-                    onMouseOut={()=>setShowMessegeClose(!ShowMessegeClose)}
+                    onClick={()=>handleProjectClick(index) }
+
+                    onMouseEnter={()=>setShowMessegeClose(true)}
+                    onMouseOut={()=>setShowMessegeClose(false)}
                     
                     />  
                     {
@@ -67,8 +69,8 @@ export const Proyects = () => {
                     {/* enlace repo */}
                     <a href={e.repo} target="_blank" rel="noopener noreferrer">
                       <img src={e.git} alt="" 
-                          onMouseEnter={()=>setShowMessegeGit(!ShowMessegeGit)}
-                          onMouseOut={()=>setShowMessegeGit(!ShowMessegeGit)}
+                          onMouseEnter={()=>setShowMessegeGit(true)}
+                          onMouseOut={()=>setShowMessegeGit(false)}
                       />
                    
                     </a>
@@ -78,8 +80,8 @@ export const Proyects = () => {
                     {/* enlace web */}
                     <a href={e.route} target="_blank" rel="noopener noreferrer">
                       <img src={e.web} alt="" 
-                        onMouseEnter={()=>setShowMessegeWeb(!ShowMessegeWeb)}
-                        onMouseOut={()=>setShowMessegeWeb(!ShowMessegeWeb)}
+                        onMouseEnter={()=>setShowMessegeWeb(true)}
+                        onMouseOut={()=>setShowMessegeWeb(false)}
                       />
                       
                     </a>
