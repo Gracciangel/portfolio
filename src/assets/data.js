@@ -1,7 +1,7 @@
 export const tech = [
     {
         id: "js",
-        route: '../public/imgs/js.png',
+        route: '../imgs/js.png',
         nombre: "javaScript"
     },
     {
@@ -11,38 +11,38 @@ export const tech = [
     },
     {
         id: 'python',
-        route: '../public/imgs/piton.png',
+        route: '../imgs/piton.png',
         nombre: 'python'
     },
     {
         id: 'java',
-        route: '../public/imgs/java.png',
+        route: '../imgs/java.png',
         nombre: "java"
     },
     {
         id: "sass",
-        route: '../public/imgs/sass.webp',
+        route: '../imgs/sass.webp',
         nombre: "sass"
     },
     {
         id: "css",
-        route: '../public/imgs/css.png',
+        route: '../imgs/css.png',
         nombre: "css"
     },
     {
         id: 'react', 
-        route: '../public/imgs/react.png',
+        route: '../imgs/react.png',
         nombre: 'react'
     }
 
 ]
-const js =  '../public/imgs/js.png'
+const js =  '../imgs/js.png'
 const html =  '../imgs/html.png' 
-const py =  '../public/imgs/piton.png'
-const java =  '../public/imgs/java.png'
-const sass =  '../public/imgs/sass.webp'
-const css =  '../public/imgs/css.png'
-const react = '../public/imgs/react.png'
+const py =  '../imgs/piton.png'
+const java =  '../imgs/java.png'
+const sass =  '../imgs/sass.webp'
+const css =  '../imgs/css.png'
+const react = '../imgs/react.png'
 
 
 export const proyectos = [
@@ -54,8 +54,8 @@ export const proyectos = [
         urlMiniatura: '../imgs/centroSalud.png',
         repo: 'https://github.com/ian-cuba/Proyecto_CaC',
         route: 'https://centrosaludintegral.netlify.app/',
-        git: '../public/imgs/github.png',
-        web: '../public/imgs/web.png',
+        git: '../imgs/github.png',
+        web: '../imgs/web.png',
         tech: [py,html , css ,js ]
 
     },
@@ -64,7 +64,7 @@ export const proyectos = [
         id: 2,
         titulo: 'Batalla Naval',
         desc: 'Pequeño proyecto creado con motivos educativos, el mismo requiere mantenimiento y actualizacion.',
-        urlMiniatura: '../public/imgs/batallaNaval.png',
+        urlMiniatura: '../imgs/batallaNaval.png',
         repo: 'https://github.com/Gracciangel/batallaNaval',
         route: 'https://thunderous-palmier-a89bee.netlify.app/',
         git: '../imgs/github.png',
@@ -76,11 +76,11 @@ export const proyectos = [
         id: 3,
         titulo: 'Peliculas',
         desc: 'Este proyecto esta pensado para consumir una API con informacion de titulos de peliculas, las mismas son actualizadas permanentemente.',
-        urlMiniatura: '../public/imgs/peliculas.png',
+        urlMiniatura: '../imgs/peliculas.png',
         repo: 'https://github.com/Gracciangel/peliculas',
         route: 'https://strong-pothos-9d8c2c.netlify.app/',
-        git: '../public/imgs/github.png',
-        web: '../public/imgs/web.png',
+        git: '../imgs/github.png',
+        web: '../imgs/web.png',
         tech: [sass , css ,js, react ]
     }
     
@@ -88,19 +88,19 @@ export const proyectos = [
 
 export const icons=[
     {
-        git: '../public/imgs/github.png'
+        git: '../imgs/github.png'
     },
     {
-        lin: '../public/imgs/ln.png'
+        lin: '../imgs/ln.png'
     },
     {
-        close: '../public/imgs/cerrar.png'
+        close: '../imgs/cerrar.png'
     },
     {
-        wsp: '../public/imgs/wsp.png'
+        wsp: '../imgs/wsp.png'
     },
     {
-        send: '../public/imgs/send.png'
+        send: '../imgs/send.png'
     }
 ]
 
