@@ -9,16 +9,6 @@
     cursor: pointer;
     filter: grayscale(10%);
 }
-.closeBtn{
-    width: 20px;
-    margin-right:2%;
-    background-color: rgb(246, 107, 107);
-    padding: 5px;
-}
-.closeBtn:hover{
-    cursor: pointer;
-
-}
 .conLink{
     display: flex;
     width: 100%;
@@ -56,15 +46,8 @@
     display: flex ;
     align-items: center;
 }
-.menuNavbar{
-    border: none;
-    background-color: white;
-}
-.menuNavbar{
-    background: transparent;
-    border: none;
-    outline: none;
-}
+
+
 .dropTitle{
     display: flex;
     justify-content: space-around;
@@ -73,14 +56,14 @@
 .navbar-nav .dropdown-menu{
     position: absolute;
 }
-.navbar-toggler-icon{
-
-    background-position: 80;
-    background-image: url('./imgs/js.png');
-    background-size: cover;
+.navbar-toggler{
+    background: whitesmoke;
+    
+    border: none;
 }
-.navbar-toggler-icon:active{
-    animation: rotar .4s infinite;
+
+.navbar-toggler:active{
+    animation: rotar .1s forwards;
     
 }
 .card{
@@ -131,7 +114,7 @@
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(30deg);
-        
+        transform: rotate(10deg);
+        transform: rotateZ(50deg);
     }
 }

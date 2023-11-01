@@ -101,6 +101,9 @@ export const icons=[
     },
     {
         send: '../imgs/send.png'
+    },
+    {
+        menu: '../imgs/menu.png'
     }
 ]
 

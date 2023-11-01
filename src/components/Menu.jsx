@@ -6,6 +6,7 @@ import { Perfil } from './Perfil';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { icons } from '../assets/data';
+
 export const Menu = () => {
   
 
@@ -14,7 +15,7 @@ export const Menu = () => {
     <Container>
     <Navbar  expand="lg">
             
-      <Navbar.Toggle aria-controls="basic-navbar-nav"className='menuNavbar' />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="control">
           <Navbar.Brand href="#home" id='navbar-brand'>
           <Nav className="me-auto">
