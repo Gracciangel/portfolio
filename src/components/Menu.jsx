@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { icons } from '../assets/data';
 
-export const Menu = () => {
+export const Menu = ({imgWsp}) => {
   
 
   return (
@@ -58,7 +58,7 @@ export const Menu = () => {
           </Navbar.Brand>
         </Navbar.Collapse>
       </Navbar>
-        <Perfil/>     
+        <Perfil img={imgWsp}/>     
     </Container>
       </>
 

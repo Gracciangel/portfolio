@@ -2,21 +2,19 @@ import React, { useState } from 'react';
 import { Menu } from './Menu' ;
 import Container from 'react-bootstrap/esm/Container';
 import '../styles/general.css' ;
-import { icons } from '../assets/data' ;
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import {Button} from 'react-bootstrap' ;
+
+import { icons } from '../assets/data';
 export const Contact = () => {
-  const [showForm , setShowform] = useState(false) ;
+  
 
   return (
     
   <Container>
-  <Menu/>
-  <a href="http://wa.me/1124553394" target="_blank" rel="noopener noreferrer"
-        >
-        <img src={icons[3].wsp} alt=""className='wsp' />
-        </a>
+  <Menu imgWsp={icons[3].wsp}/>
+
       <div className="containerForm">
      <Form method='POST' className='formulario'
       action="https://formsubmit.co/angelgracci@outlook.com"

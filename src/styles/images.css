@@ -41,12 +41,29 @@
 }
 .imagenProfile{
     margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
  .navbar-nav{
     display: flex ;
     align-items: center;
 }
+a .wsp{
+	width: 50px;
+	transition: .5s;
+	top: 17%;
+	right: 14%;
+}
+.wspHover{
+    position: absolute;
+    top:10% ;
+}
 
+ a .wsp:hover{
+	transform: scale(1.07);
+}
 
 .dropTitle{
     display: flex;
@@ -96,6 +113,12 @@
     animation-duration: .3s;
     /* animation: forwards; */
     
+}
+/* footer */
+
+.footer{ 
+    margin: 11% 2%;
+    padding: 1.5rem;
 }
 @keyframes showSend{
     from{

@@ -1,5 +1,6 @@
 body{
     background-color: rgba(0, 0, 0, 0.852);
+	overflow: auto;
 }
 h1{
     color: white;
@@ -9,10 +10,7 @@ h1{
 	padding: 0;
 }
 
-body {
-	background: #222222;
-	overflow: hidden;
-}
+
 /* formulario */
 .containerForm{
 	margin:10%  ;
@@ -32,17 +30,7 @@ body {
 	align-items: center;
 	justify-content:space-evenly;
 }
- a .wsp{
-	width: 50px;
-	transition: .5s;
-	position: absolute;
-	top: 17%;
-	right: 14%;
-}
 
- a .wsp:hover{
-	transform: scale(1.07);
-}
 
 /* presentacion */
 .containerPresentacion{

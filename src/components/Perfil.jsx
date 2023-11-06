@@ -1,5 +1,4 @@
 import Col from 'react-bootstrap/Col';
-
 import Image from 'react-bootstrap/Image';
 import { imagesPerfil, doc } from '../assets/data';
 import '../styles/images.css';
@@ -7,9 +6,9 @@ import { useState } from 'react';
 import { Messege } from './Messege';
 
 
-export const Perfil = () =>{
+export const Perfil = ({img}) =>{
   const[ShowMessegePerfil, setShowMessegePerfil] = useState(false)
-
+  const[wsp , setWasp] = useState(false)
 
 
 
@@ -31,6 +30,18 @@ export const Perfil = () =>{
         </a>
       }
     </Col>
+         <a href="http://wa.me/1124553394" target="_blank" rel="noopener noreferrer"
+        >
+          {
+            wsp && <Messege type={'success'} messege={'hablamos por whatsapp?'} style={'wspHover'}/>
+          }
+        <img src={img}alt=""className='wsp'
+          onMouseEnter={()=>setWasp(!wsp)}
+          onMouseOut={()=> setWasp(!wsp)}
+        />
+
+        </a>
+ 
 </div>
   );
 } ;
