@@ -2,7 +2,7 @@ export const tech = [
     {
         id: "js",
         route: '../imgs/js.png',
-        nombre: "javaScript"
+        nombre: "JavaScript"
     },
     {
         id: "html",
@@ -12,27 +12,32 @@ export const tech = [
     {
         id: 'python',
         route: '../imgs/piton.png',
-        nombre: 'python'
+        nombre: 'Python'
     },
     {
         id: 'java',
         route: '../imgs/java.png',
-        nombre: "java"
+        nombre: "Java"
     },
     {
         id: "sass",
         route: '../imgs/sass.webp',
-        nombre: "sass"
+        nombre: "Sass"
     },
     {
         id: "css",
         route: '../imgs/css.png',
-        nombre: "css"
+        nombre: "CSS"
     },
     {
         id: 'react', 
         route: '../imgs/react.png',
-        nombre: 'react'
+        nombre: 'React'
+    },
+    {
+        id: 'ts',
+        route : '../imgs/ts.webp',
+        nombre : 'Typescript'
     }
 
 ]

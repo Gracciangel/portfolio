@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import { imagesPerfil, doc } from '../assets/data';
+import { imagesPerfil, doc } from '/src/assets/data.js';
 import '../styles/images.css';
 import { useState } from 'react';
 import { Messege } from './Messege';
@@ -39,10 +39,12 @@ export const Perfil = ({img}) =>{
           onMouseEnter={()=>setWasp(!wsp)}
           onMouseOut={()=> setWasp(!wsp)}
         />
-
+  
         </a>
- 
+          
 </div>
+
   );
+  
 } ;
 
