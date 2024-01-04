@@ -29,7 +29,7 @@ export const Menu = ({imgWsp}) => {
             {/* proyectos */}
           <Nav.Item>
           <Nav.Link>
-              <Link className='link' to={'/proyect'}>Proyecto</Link>
+              <Link className='link' to={'/proyect'}>Proyectos</Link>
             </Nav.Link>
           </Nav.Item>
             {/* contacto */}

@@ -113,7 +113,7 @@ export const icons=[
 ]
 
 export const doc ={
-    cv: '../doc/Angel_MugracciCV.pdf'
+    cv: '../doc/Angel-Mugracci-CV.pdf'
 }
 
 export const imagesPerfil = {
