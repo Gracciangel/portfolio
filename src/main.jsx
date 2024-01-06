@@ -1,15 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {App} from './App'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom' ;
+import {createBrowserRouter, Link, RouterProvider} from 'react-router-dom' ;
 import { Proyects } from './components/Proyects';
 import { Contact } from './components/Contact';
 import { Enviado } from './components/Enviado';
+import { Start } from './components/Start';
+import { ChakraProvider } from '@chakra-ui/react';
 
 
 const router=  createBrowserRouter([
   {
     path: '/',
+    element: <Start/>
+  },
+  {
+    path: '/home',
     element: <App/>
   },
   {
@@ -30,7 +36,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
   <React.StrictMode>
-    <RouterProvider router={router}/>
     
-  </React.StrictMode>,
-)
+    <ChakraProvider>
+    <RouterProvider router={router}/>
+    </ChakraProvider>
+  </React.StrictMode>
+  )

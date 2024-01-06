@@ -7,12 +7,14 @@ import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { icons } from '../assets/data';
 
+
 export const Menu = ({imgWsp}) => {
   
 
   return (
     <>
-    <Container>
+  
+  <Container>
     <Navbar  expand="lg">
             
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,7 +25,7 @@ export const Menu = ({imgWsp}) => {
             <Nav.Item>
             {/* home */}
           <Nav.Link >
-              <Link className='link' to={'/'}>Home</Link >
+              <Link className='link' to={'/home'}>Home</Link >
             </Nav.Link>
           </Nav.Item>
             {/* proyectos */}
@@ -44,13 +46,15 @@ export const Menu = ({imgWsp}) => {
           </Dropdown.Toggle>
           <Dropdown.Menu className='drop'>
             {/* github */}
+          
             <Dropdown.Item href='https://github.com/Gracciangel' target='_blank' className='dropTitle'>
-              GitHub <img src={icons[0].git} alt=""className='imgMenu' />
+               <img src={icons[0].git} alt=""className='imgMenu' />
             </Dropdown.Item>
             {/* linkedin */}
             <Dropdown.Item href='https://www.linkedin.com/in/angel-mugracci/' target='_blank' className='dropTitle'>
-              Linkedin <img src={icons[1].lin} alt=""className='imgMenu' />
+               <img src={icons[1].lin} alt=""className='imgMenu' />
             </Dropdown.Item>
+          
           </Dropdown.Menu>
          </Dropdown>
           </Nav>
@@ -60,7 +64,7 @@ export const Menu = ({imgWsp}) => {
       </Navbar>
         <Perfil img={imgWsp}/>     
     </Container>
-      </>
+    </>
 
   )
 }

@@ -31,7 +31,9 @@ h1{
 	justify-content:space-evenly;
 }
 
-
+.btnStart{
+	background-color: white;
+}
 /* presentacion */
 .containerPresentacion{
 	color: aliceblue;
@@ -60,5 +62,4 @@ h1{
 .containerPresentacion h2{
 	text-align: center;
 }
-
 
