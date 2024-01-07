@@ -3,7 +3,6 @@ import { MenuApp } from './components/MenuApp';
 import Container from 'react-bootstrap/esm/Container' ;
 import './styles/general.css' ;
 import { Footer } from './components/Footer';
-import { motion } from 'framer-motion';
 import { BtnMode } from './components/BtnMode';
 import { Text, useColorModeValue } from '@chakra-ui/react';
 
@@ -11,26 +10,17 @@ import { Text, useColorModeValue } from '@chakra-ui/react';
 export const App = () => {
   
  return (
-   <motion.div
-  initial={{opacity: 0}}
-  animate={{
-    opacity: 1
-  }}
-  transition={{
-    delay: 1
-  }}
-  >
-
 
 
   <Container>
+      
       <MenuApp/>
+      
     <Container>
       <BtnMode/>
         <div className="containerPresentacion">
     <Text color={useColorModeValue('gray.800', 'gray.200')}>
           <div className="text">
-
           <h2>Hola! 👋 mi nombre es Angel</h2> <br />
           <p>
               Soy un apasionado de la programación con sede en Buenos Aires, Argentina. Mi recorrido en el mundo de la programación comenzó con un enfoque en el desarrollo web. Desde la finalización de cursos hasta la práctica en proyectos reales, he estado comprometido en poner en práctica y consolidar mis conocimientos.
@@ -48,6 +38,6 @@ export const App = () => {
         </div>
     </Container>
   </Container>
-  </motion.div>
+  
  )
 }

@@ -12,7 +12,7 @@ export const BtnMode = () => {
             <Switch
             onChange={toggleColorMode}
             />
-            <SunIcon/>  
+            <SunIcon/>    
       </div>
         </>
     )

@@ -8,7 +8,8 @@ import { Menu, Sidebar , MenuItem } from 'react-pro-sidebar';
 import { useState } from 'react';
 import { SvgButon } from './SvgButon';
 import '../styles/menu.css' ;
-
+import {Perfil} from './Perfil'
+import '../styles/general.css'
 
 // menu component
 export const MenuApp = () => {
@@ -28,6 +29,9 @@ export const MenuApp = () => {
   return (
     <>
   <Container>
+    <div className="containerMenu">
+
+    
     <SvgButon
     cb={toggle}
     state={animated}
@@ -67,6 +71,8 @@ export const MenuApp = () => {
       </Menu>
 
     </Sidebar>
+    <Perfil/>
+    </div>
      </Container>
     </>
 

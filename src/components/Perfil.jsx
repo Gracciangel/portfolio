@@ -1,9 +1,10 @@
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import { imagesPerfil, doc } from '/src/assets/data.js';
+import { imgPerfil , doc} from '../assets/data';
 import '../styles/images.css';
 import { useState } from 'react';
 import { Messege } from './Messege';
+import { Tooltip } from '@chakra-ui/react';
 
 
 export const Perfil = ({img}) =>{
@@ -13,37 +14,18 @@ export const Perfil = ({img}) =>{
 
 
   return (
-    <div className="imagenProfile">
-    <Col xs={6} md={4} >
-      {
-        <a href={doc.cv} download={doc.cv}>
-          <Image src={imagesPerfil.perfil} roundedCircle className='perfil'
-            onMouseEnter={()=>setShowMessegePerfil(!ShowMessegePerfil)}
-            onMouseOut={()=>setShowMessegePerfil(!ShowMessegePerfil)}
-            
-
-        />
-        {
-          ShowMessegePerfil && <Messege type={'success'} messege={'click para descargar el CV '} style={'messegeProfile'} />
-          
-        }
-        </a>
-      }
-    </Col>
-         <a href="http://wa.me/1124553394" target="_blank" rel="noopener noreferrer"
+        <>
+        <Tooltip
+          label='Descargar CV'
+          bg='green.400'
         >
-          {
-            wsp && <Messege type={'success'} messege={'hablamos por whatsapp?'} style={'wspHover'}/>
-          }
-        <img src={img}alt=""className='wsp'
-          onMouseEnter={()=>setWasp(!wsp)}
-          onMouseOut={()=> setWasp(!wsp)}
+        <a href={doc.cv} rel="noopener noreferrer" download>
+        <img src={imgPerfil.perfil} alt="foto de perfil" 
+          className='perfil'
         />
-  
         </a>
-          
-</div>
-
+        </Tooltip>
+        </>
   );
   
 } ;

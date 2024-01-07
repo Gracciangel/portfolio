@@ -116,7 +116,7 @@ export const doc ={
     cv: '../doc/Angel-Mugracci-CV.pdf'
 }
 
-export const imagesPerfil = {
+export const imgPerfil = {
     perfil: '../imgs/fotoPerfil.png'
 }
 

@@ -67,3 +67,9 @@ h1{
 	display: flex;
 	gap: .5rem;
 }
+.containerMode{
+	display: flex;
+}
+.containerMenu{
+	display: flex;
+}
