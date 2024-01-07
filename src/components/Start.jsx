@@ -6,6 +6,7 @@ import './componentsStart/styles.components/style.css'
 import { Average } from "./componentsStart/Average";
 import { motion } from 'framer-motion' ;
 import './componentsStart/styles.components/style.css'
+import { Text, useColorModeValue } from "@chakra-ui/react";
 
 export const Start = () => {
 const [progress, setProgress] = useState(0)
@@ -36,9 +37,13 @@ useEffect(()=>{
      animate={{opacity : 0}}
      transition={{delay: 6}}
      >
+    <Text
+    color={useColorModeValue('gray.200', 'gray.800')}
+     >
             <Average
     val={progress}
     />
+    </Text>
      </motion.div>
         
         )

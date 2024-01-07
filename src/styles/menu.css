@@ -1,0 +1,37 @@
+.ps-sidebar-container{
+    background: transparent !important;
+}
+.css-svnq1w{
+    border-color: transparent !important;
+}
+.ps-menu-label{
+    color: rgb(127, 122, 122);
+}
+#menu{   
+    width: 45px;
+    height: 30px;
+    transition: .5s;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.line1{
+    transition: .3s;
+}
+
+
+.svgBtn{
+    width: 30px;
+    margin-bottom: 1rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.container{
+    background: transparent;
+    padding: 1rem;
+}
+.ps-menuitem-root {
+    color: rgb(73, 73, 58);
+}
+

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Menu } from './Menu' ;
+// import { Menu } from './Menu' ;
 import Container from 'react-bootstrap/esm/Container';
 import '../styles/general.css' ;
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import {Button} from 'react-bootstrap' ;
-
+import { MenuApp } from './MenuApp';
 import { icons } from '../assets/data';
 export const Contact = () => {
   
@@ -13,8 +13,8 @@ export const Contact = () => {
   return (
     
   <Container>
-  <Menu imgWsp={icons[3].wsp}/>
-
+  
+    <MenuApp/>
       <div className="containerForm">
      <Form method='POST' className='formulario'
       action="https://formsubmit.co/angelgracci@outlook.com"

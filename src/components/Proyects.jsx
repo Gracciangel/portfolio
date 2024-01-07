@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu } from './Menu';
+import { MenuApp } from './MenuApp';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import { proyectos, icons } from '../assets/data';
@@ -26,7 +26,8 @@ export const Proyects = () => {
 
     return (
       <Container>
-        <Menu/> 
+        <MenuApp/>
+        <h1>Proyectos</h1>
         <div className="containerDiv">
           <Card>
 

@@ -62,4 +62,8 @@ h1{
 .containerPresentacion h2{
 	text-align: center;
 }
-
+/* btn mode  */
+.mode{
+	display: flex;
+	gap: .5rem;
+}
