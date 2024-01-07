@@ -5,6 +5,26 @@ export const tech = [
         nombre: "JavaScript"
     },
     {
+        id:'git',
+        route: '../imgs/git.png',
+        nombre: "Git"
+    },
+    {
+        id: 'chrakra',
+        route: '../imgs/chakra.webp',
+        nombre: 'chakra UI'
+    },
+    {
+        id: 'boost',
+        route: '../imgs/boos.svg',
+        nombre: 'Bootstrap'
+    },
+    {
+        id: 'swip',
+        route: '../imgs/swip.svg',
+        nombre: 'Swiper'
+    },
+    {
         id: "html",
         route: "../imgs/html.png",
         nombre: "HTML"

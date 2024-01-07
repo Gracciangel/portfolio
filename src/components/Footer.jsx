@@ -1,29 +1,53 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { tech, icons } from '../assets/data';
-import { Messege } from '../components/Messege';
-import { useState } from 'react';
+import { tech } from '../assets/data';
 import '../styles/images.css'
+import {Swiper , SwiperSlide} from 'swiper/react'
+import { Code } from '@chakra-ui/react';
+// stilos de swiper / componente
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay } from 'swiper/modules'
+
+// ---------------------------------
 export const Footer = () => {
-    const [showRepo , setShowRepo] = useState(false)
+    
   return (
    <Container>
    <div className="footer">
-   <a href="https://github.com/Gracciangel/portfolio" target="_blank" rel="noopener noreferrer">
-    <img src={icons[0].git} alt=""className='git' 
-      onMouseEnter={()=> setShowRepo(!showRepo)}
-      onMouseLeave={()=> setShowRepo(!showRepo)}
-    />
-    {
-      showRepo && <Messege type={'primary'} messege={'repositorio del portfolio'} style={'msjGit'}/>
-    }
-    </a>
-    <h2>Tecnologias que aprendí 👨‍💻</h2>
-    <div className="presentacionTech">
+
+    <Code
+      flexDirection={'row'}
+      textAlign={'center'}
+      colorScheme='green'
+      children="Tecnologías, librerías y frameworks"
+    ></Code>
+    <div className="carouselTech">
       {
-        tech.map(e => 
-            <img src={e.route} alt="" key={e.id} />
-          )
+        <Swiper
+        spaceBetween={100}
+        loop={true}
+        autoplay={{
+          delay:700,
+          disableOnInteraction: true,
+        }}
+      
+        
+        modules={[Autoplay]}
+        className="mySwiper"
+        >
+          {
+            tech.map(e => 
+              <SwiperSlide key={e.id}>
+              <div className="containerSwiper">
+              <img src={e.route} alt=""/>
+                <span>{e.nombre}</span>
+              </div>
+              </SwiperSlide>
+            )
+          }
+        </Swiper>
       }
     </div>
    </div>

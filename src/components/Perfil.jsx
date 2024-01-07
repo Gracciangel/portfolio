@@ -1,18 +1,19 @@
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+
 import { imgPerfil , doc} from '../assets/data';
 import '../styles/images.css';
 import { useState } from 'react';
-import { Messege } from './Messege';
-import { Tooltip } from '@chakra-ui/react';
+
+import {Alert , Tooltip } from '@chakra-ui/react';
 
 
 export const Perfil = ({img}) =>{
-  const[ShowMessegePerfil, setShowMessegePerfil] = useState(false)
-  const[wsp , setWasp] = useState(false)
-
-
-
+  const [ alerta , setAlerta ] = useState(false)
+  const showAlert =() =>{
+    setAlerta(true)
+    setTimeout(()=>{
+      setAlerta(false)
+    }, 1000)
+  }
   return (
         <>
         <Tooltip
@@ -22,9 +23,22 @@ export const Perfil = ({img}) =>{
         <a href={doc.cv} rel="noopener noreferrer" download>
         <img src={imgPerfil.perfil} alt="foto de perfil" 
           className='perfil'
+          onClick={showAlert }
         />
         </a>
         </Tooltip>
+        {
+          alerta && (
+              <Alert
+              position='absolute'
+              width='180px'
+              status='success'
+              right='40%'
+              >
+                Se ha iniciado la Descarga
+              </Alert>
+          )
+        }
         </>
   );
   

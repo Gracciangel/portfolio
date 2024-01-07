@@ -6,9 +6,9 @@ export const SvgButon = ({cb , state}) => {
     const theme = localStorage.getItem('chakra-ui-color-mode')
 
 
-    const lin1c = "matrix(-0.5279 0.811948 -0.850176 -0.582463 12.9968 2.28882)" ;
-    const lin1a = "matrix(1.0303 0.00127483 -0.00334478 0.9682 1.25464 2.12122)" ;
-    const lin2c = "matrix(0.601189 0.837039 -0.800031 0.545791 0 -2)";
+    let lin1c = "matrix(-0.5279 0.811948 -0.850176 -0.582463 12.9968 2.28882)" ;
+    let lin1a = "matrix(1.0303 0.00127483 -0.00334478 0.9682 1.25464 2.12122)" ;
+    let lin2c = "matrix(0.601189 0.837039 -0.800031 0.545791 0 -2)";
     return (
     <Tooltip
      label='Menu'

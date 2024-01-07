@@ -7,8 +7,7 @@
     margin: 5%;
 }
 .cardProyectos .imgCard{
-    width: 300px;
-    filter: grayscale(90%);
+    width: 300px; 
     transition: .3s;
 }
 .cardProyectos .imgCard:hover{
