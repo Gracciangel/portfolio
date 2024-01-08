@@ -1,5 +1,12 @@
 .perfil {
-    width: 150px;
+    width: 200px;
+    transition: .5s;
+    transform: rotateY(5deg);
+}
+.perfil2{
+    transition: .5s;
+    width: 200px;
+    transform: rotateY(58deg);
 }
 
 .perfil:hover {

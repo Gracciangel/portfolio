@@ -1,15 +1,6 @@
 
 import Container from 'react-bootstrap/Container';
 import { useState } from 'react';
-import {
-  
-  MenuButton,
-  MenuList,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import { icons } from '../assets/data';
 import { Menu, Sidebar, MenuItem } from 'react-pro-sidebar';
@@ -25,12 +16,13 @@ export const MenuApp = () => {
 
   const [collapse, setCollapse] = useState(false)
   const [animated, setAnimated] = useState(false)
-
+  const [ perfil , setPerfil ] = useState(false)
   //functions
 
   const toggle = () => {
     setCollapse(!collapse)
     setAnimated(!animated)
+    setPerfil(!perfil)
     if (animated) {
       return true;
     }
@@ -82,9 +74,10 @@ export const MenuApp = () => {
             </Menu>
                   
           </Sidebar>
-          <Perfil />
+          <Perfil changeClass={perfil} />
         </div>
       </Container>
+      
     </>
 
   )
