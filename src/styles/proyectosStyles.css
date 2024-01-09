@@ -1,20 +1,52 @@
-.cardProyectos{
+.containerProyect{
+    width: 367px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    margin: 5%;
+    margin: 0 auto;
+    padding: 5% 0;
+    
+    .mySwiper{
+        width: 100%;
+        
+        .titulo{
+        font-family: monospace;
+        }
+        
+
+        .descrip{
+            padding-top: 3%;
+            text-align: center;
+            font-family: monospace;
+            font-size: 150%;
+            
+            }
+        .links{
+            display: flex;
+            justify-content: space-around;
+            img{
+                width: 50px;
+                
+                &:hover{
+                    
+                    scale: 1.1;
+                }
+            }
+        }
+    }
 }
-.cardProyectos .imgCard{
-    width: 300px; 
-    transition: .3s;
+@keyframes shadow{
+    
 }
-.cardProyectos .imgCard:hover{
-    scale: 1.1;
-    filter: grayscale(0);
-    cursor: pointer;
+
+.contentInfo p {
+    margin: 4%auto;
+    text-align: center;
+    font-size: 120%;
 }
+.contentInfo h3{ 
+    
+    text-align: center;
+}
+
 /* menuDrop */
 .dropdown-menu{
     background: transparent;

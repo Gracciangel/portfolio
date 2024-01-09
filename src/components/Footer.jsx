@@ -22,6 +22,7 @@ export const Footer = () => {
       textAlign={'center'}
       colorScheme='green'
       children="Tecnologías, librerías y frameworks"
+      padding='1rem'
     ></Code>
     <div className="carouselTech">
       {

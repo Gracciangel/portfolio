@@ -140,4 +140,6 @@ export const imgPerfil = {
     perfil: '../imgs/fotoPerfil.png'
 }
 
-
+export const parallax = {
+    par: '../imgs/backParallax.avif'
+}

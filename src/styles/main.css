@@ -1,0 +1,39 @@
+.chakra-ui-light{
+    *{
+        color: black;
+    }
+    h1{
+        text-align:center;
+
+    }
+    span{
+        color: black;
+    }
+    h3{
+        font-family: monospace;
+        padding: 2rem 0;
+    }
+}
+.chakra-ui-dark{
+    background-color: rgb(25, 35, 46);
+    h1{
+        
+        text-align: center;
+
+    }
+    *{
+        color: whitesmoke;
+    }
+    span{
+        color: white;
+        &:hover{
+            color: black;
+        
+        }
+    }
+    h3{
+        font-family: monospace;
+        padding: 2rem 0;
+    }
+    
+}

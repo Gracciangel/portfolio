@@ -1,119 +1,101 @@
-import React, { useState } from 'react';
 import { MenuApp } from './MenuApp';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import { proyectos, icons } from '../assets/data';
+import { proyectos, icons  } from '../assets/data';
+import { Code, Tooltip } from '@chakra-ui/react';
+
+import {Swiper , SwiperSlide , } from 'swiper/react' ;
+import { EffectCoverflow , Pagination , Navigation } from 'swiper/modules' ;
+//------------------
+
 import '../styles/proyectosStyles.css'
-import { Messege } from './Messege';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
 
 export const Proyects = () => {
-  const[ShowMessegeClose, setShowMessegeClose] = useState(false)
-  const[ShowMessegeGit, setShowMessegeGit] = useState(false)
-  const[ShowMessegeWeb, setShowMessegeWeb] = useState(false)
-  const [projectStates, setProjectStates] = useState(proyectos.map(() => false));
-  const [classCardStates, setClassCardStates] = useState(proyectos.map(() => false));
-
-  const handleProjectClick = (index) => {
-    const newProjectStates = [...projectStates];
-    newProjectStates[index] = !newProjectStates[index];
-    setProjectStates(newProjectStates);
-    const newClass = [...classCardStates];
-    newClass[index] = !newClass[index];
-    setClassCardStates(newClass);
-    setShowMessegeClose(false)
-  };
-
+  
 
     return (
-      <Container>
-        <MenuApp/>
-        <h1>Proyectos</h1>
-        <div className="containerDiv">
-          <Card>
-
-            <div className="cardProyectos">
-            {
-              proyectos.map((e, index)=> 
-              <>
-              <Card.Img
-            className={classCardStates[index] ? 'positionCard' : 'imgCard'}
-              src={e.urlMiniatura}
-               onClick={()=> handleProjectClick(index)}
-               key={e.id}
+      
+      <>
+          <Container>
+          <MenuApp/>
+        <div>
+        <Code
+        width='100%'
+        textAlign='center'
+        colorScheme='yellow'
+        ><h3>Proyectos</h3></Code>
+        </div>  
+          </Container>
+        <div
+          className='containerProyect'
+        >
+            <Swiper
+            spaceBetween={30}
+            effect={'coverflow'}
+            coverflowEffect={{
+              rotate: 150,
+              stretch: 10,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination ={true}
+            grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+            modules={[EffectCoverflow, Navigation, Pagination]}
+            className="mySwiper"
             >
-            </Card.Img>
-
-              <>
-                {
-                  projectStates[index] && 
-            <div className='containerInfo'>
-                  <>
-                    <h2>{e.titulo}</h2>
-                    <p>{e.desc}</p>
-                    <div className='tecnoligias'>
-
-                         {/* img close */}
-                    <img src={icons[2].close} alt="" 
-                    
-                    className='close'
-                    onClick={()=>handleProjectClick(index) }
-
-                    onMouseEnter={()=>setShowMessegeClose(true)}
-                    onMouseOut={()=>setShowMessegeClose(false)}
-                    
-                    />  
-                    {
-                      ShowMessegeClose && <Messege type={'danger'} style={'messegeClose'} messege={'Cerrar'}/>
-                    }
-                    <div className="divEnlaces">
-                     
-                    {/* enlace repo */}
-                    <a href={e.repo} target="_blank" rel="noopener noreferrer">
-                      <img src={e.git} alt="" 
-                          onMouseEnter={()=>setShowMessegeGit(true)}
-                          onMouseOut={()=>setShowMessegeGit(false)}
-                      />
-                   
-                    </a>
-                    {
-                        ShowMessegeGit && <Messege type={'primary'} style={'messegeGit'} messege={'Ver Repo'}/>
-                      }
-                    {/* enlace web */}
-                    <a href={e.route} target="_blank" rel="noopener noreferrer">
-                      <img src={e.web} alt="" 
-                        onMouseEnter={()=>setShowMessegeWeb(true)}
-                        onMouseOut={()=>setShowMessegeWeb(false)}
-                      />
-                      
-                    </a>
-                    {
-                        ShowMessegeWeb && <Messege type={'warning'} style={'messegeWeb'} messege={'Ir al sitio'}/>
-                      }
-                    </div>
-                    <div className='divSubtitle'>
-                    <h3>tecnologias usadas</h3>
-                  <div>
-                  {
-                        e.tech.map((e , i)=> 
-                          <img src={e} alt=""key={i} />
-                        )
-                      }
-                  </div>
-                    </div>
-                    </div>
-                  </>
-              </div>
-                        
-                
+              {
+                proyectos.map(p => {
+                  return(
+                    <SwiperSlide key={p.id}
+                    className='cover'
+                    >
+                      <h2
+                      className='titulo'
+                      >{p.titulo}</h2>
+                      <img src={p.urlMiniatura} alt="" />                    
+                      <p
+                      className='descrip'
+                      >{p.desc  }</p>
+                      <div className="links">
+                        {/* repo */}
+                        <Tooltip
+                        label= 'ir al repositorio'
+                        bg= 'gray.700'
+                        color={'white'}
+                        rounded={'5px'}
+                        >
+                        <a href={p.repo} target='-blank'>
+                          <img src={p.git} alt="" />
+                        </a>
+                        </Tooltip>
+                        {/* web */}
+                        <Tooltip
+                        label= 'ir al sitio'
+                        bg='green.400'
+                        rounded={'5px'}
+                        >
+                        <a href={p.route} target='-blank'>
+                          <img src={p.web} alt="" />
+                        </a>
+                        </Tooltip>
+                      </div>
+                    </SwiperSlide>
+                  )
+                })
               }
-              </>
-            </>
-              )
-            }
-            </div>
-          </Card>
+              
+            </Swiper>
         </div>
-      </Container>
+           </>
+      
     )
 }
 

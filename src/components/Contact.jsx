@@ -1,30 +1,41 @@
-import React, { useState } from 'react';
-// import { Menu } from './Menu' ;
+import React, { useState } from 'react' ;
 import Container from 'react-bootstrap/esm/Container';
 import '../styles/general.css' ;
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import {Button} from 'react-bootstrap' ;
 import { MenuApp } from './MenuApp';
-import { icons } from '../assets/data';
+import { Code, Text, useColorModeValue } from '@chakra-ui/react';
+
+
 export const Contact = () => {
   
-
   return (
     
   <Container>
   
     <MenuApp/>
+    <Code
+    width='100%'
+    textAlign='center'
+    bg='red.400'
+    >
+    <h3>Contacto</h3>
+    </Code>
       <div className="containerForm">
      <Form method='POST' className='formulario'
       action="https://formsubmit.co/angelgracci@outlook.com"
      >
       <input type="hidden"name='_next' value="http://localhost:5173/send" />
      <input type="hidden"name='_captcha' value="false" />
-     <FloatingLabel
+      <Text
+      color={useColorModeValue('gray.800', 'gray.200')}
+      >
+      <FloatingLabel
         controlId="floatingInput"
         label="Ingrese Nombre"
         className="mb-3"
+        
       >
         <Form.Control type="text" placeholder="Ingrese Nombre" name='nombre' />
       </FloatingLabel>
@@ -42,14 +53,15 @@ export const Contact = () => {
         />
       </FloatingLabel>
 
+      </Text>
      
-     <Button variant="success" type="submit" >
+     <Button variant="success" type="submit"
+
+     >
         Enviar
       </Button>
-      
-     
-     
      </Form>
+     
       </div>
   </Container>
     

@@ -15,6 +15,30 @@
         cursor: pointer;
     }
 }
+.submenu{
+    display: flex;
+    flex-direction: column;
+    .submenu-menu{
+        display: flex;
+    img{
+        width: 45px;
+        filter: grayscale(70);
+        transition: .3s;
+        &:hover{
+            filter: grayscale(0);
+            
+        }
+    }
+
+
+    }
+    &:hover{
+        background: transparent;
+    }
+}
+.ps-menuitem-root:hover{
+    color-scheme: none;
+}
 .line1{
     transition: .3s;
 }
