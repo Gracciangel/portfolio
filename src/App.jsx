@@ -5,6 +5,7 @@ import './styles/general.css';
 import { Footer } from './components/Footer';
 import { BtnMode } from './components/BtnMode';
 import { Code, Text, useColorModeValue } from '@chakra-ui/react';
+import Typewriter from 'typewriter-effect';
 
 //-----------------------------------
 
@@ -25,7 +26,18 @@ export const App = () => {
                 width='100%'
                 padding='2rem'
                 textAlign={'end'}
-              ><h2>Hola! mi nombre es Angel</h2> </Code>
+              >
+                <h3>{
+                  <Typewriter
+                  onInit={(typewriter) => 
+                  {
+                    typewriter.typeString('hola me llamo Angel!')
+                    .pauseFor(1400).start()
+    
+                  }}
+                  />}</h3>
+              
+               </Code>
                 <p>
                 Soy un apasionado de la programación con sede en Buenos Aires, Argentina. Mi recorrido en el mundo de la programación comenzó con un enfoque en el desarrollo web. Desde la finalización de cursos hasta la práctica en proyectos reales, he estado comprometido en poner en práctica y consolidar mis conocimientos.
 

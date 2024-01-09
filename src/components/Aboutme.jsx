@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import { Code } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import '../styles/general.css'
+import Typewriter from 'typewriter-effect' ;
 
 export const Aboutme = () => {
   return (
@@ -17,9 +18,15 @@ export const Aboutme = () => {
           bg='blue.400'
           className='me'
         >
-          <h3
-          
-          >Sobre mi </h3>
+            <h3>{
+                  <Typewriter
+                  onInit={(typewriter) => 
+                  {
+                    typewriter.typeString('Sobre mí!')
+                    .pauseFor(1400).start()
+    
+                  }}
+                  />}</h3>
         </Code>
         <p
           className='parrafo-mi'

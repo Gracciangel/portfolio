@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import {Button} from 'react-bootstrap' ;
 import { MenuApp } from './MenuApp';
 import { Code, Text, useColorModeValue } from '@chakra-ui/react';
-
+import Typewriter from 'typewriter-effect' ;
 
 export const Contact = () => {
   
@@ -20,7 +20,15 @@ export const Contact = () => {
     textAlign='center'
     bg='red.400'
     >
-    <h3>Contacto</h3>
+      <h3>{
+                  <Typewriter
+                  onInit={(typewriter) => 
+                  {
+                    typewriter.typeString('Estamos en contacto!')
+                    .pauseFor(1400).start()
+    
+                  }}
+                  />}</h3>
     </Code>
       <div className="containerForm">
      <Form method='POST' className='formulario'

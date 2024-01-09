@@ -11,7 +11,7 @@ import '../styles/proyectosStyles.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import Typewriter from 'typewriter-effect' ;
 
 
 
@@ -28,7 +28,16 @@ export const Proyects = () => {
         width='100%'
         textAlign='center'
         colorScheme='yellow'
-        ><h3>Proyectos</h3></Code>
+        >  <h3>{
+          <Typewriter
+          onInit={(typewriter) => 
+          {
+            typewriter.typeString('Estos son mis proyectos!')
+            .pauseFor(1400).start()
+
+          }}
+          />}</h3>
+        </Code>
         </div>  
           </Container>
         <div
