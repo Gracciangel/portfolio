@@ -26,7 +26,7 @@ export const Contact = () => {
      <Form method='POST' className='formulario'
       action="https://formsubmit.co/angelgracci@outlook.com"
      >
-      <input type="hidden"name='_next' value="http://localhost:5173/send" />
+      <input type="hidden"name='_next' value="https://angelmugracciprofile.netlify.app/send" />
      <input type="hidden"name='_captcha' value="false" />
       <Text
       color={useColorModeValue('gray.800', 'gray.200')}

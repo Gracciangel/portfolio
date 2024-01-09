@@ -100,7 +100,7 @@ export const MenuApp = () => {
                     </a>
                   </MenuItem>
                   <MenuItem>
-                    <a href="https://api.whatsapp.com/send?phone=1124553394&text=Hola Angel! Quiero contactar con vos!.
+                    <a href="https://api.whatsapp.com/send?phone=+5401124553394&text=Hola Angel! Quiero contactar con vos!.
 " target="_blank" rel="noopener noreferrer">
   <img src={icons[3].wsp} alt="" />
 </a>

@@ -32,7 +32,7 @@ export const Aboutme = () => {
           Me encanta tocar la 🎸, el aprendizaje tecnológico 👨‍💻, la música 🎵 y el rock 🤘.
           <blockquote></blockquote>
             <strong>
-            Sin duda, puedes enviarme un mensaje por <a href="https://api.whatsapp.com/send?phone=1124553394&text=¡Hola Ángel! Quiero contactar contigo." target="_blank" rel="noopener noreferrer"><b style={{color:'#477317'}}>WhatsApp 📱</b></a> o visitar la sección de <Link to={'/contact'}><b style={{color:'#b6d47fab'}}>Contacto ✉️</b></Link>.
+            Sin duda, puedes enviarme un mensaje por <a href="https://api.whatsapp.com/send?phone=+5401124553394&text=¡Hola Ángel! Quiero contactar contigo." target="_blank" rel="noopener noreferrer"><b style={{color:'#477317'}}>WhatsApp 📱</b></a> o visitar la sección de <Link to={'/contact'}><b style={{color:'#b6d47fab'}}>Contacto ✉️</b></Link>.
             </strong>
         </p>
       </Container>
