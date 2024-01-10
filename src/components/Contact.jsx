@@ -45,6 +45,7 @@ export const Contact = () => {
         className="mb-3"
         
       >
+    
         <Form.Control type="text" placeholder="Ingrese Nombre" name='nombre' />
       </FloatingLabel>
       <FloatingLabel controlId="floatingPassword" label="Ingrese Email">

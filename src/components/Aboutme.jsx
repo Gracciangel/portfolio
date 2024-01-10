@@ -5,6 +5,7 @@ import { Code } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import '../styles/general.css'
 import Typewriter from 'typewriter-effect' ;
+import { icons } from '../assets/data';
 
 export const Aboutme = () => {
   return (
@@ -28,20 +29,59 @@ export const Aboutme = () => {
                   }}
                   />}</h3>
         </Code>
-        <p
+          
+          <p
           className='parrafo-mi'
         >
-          Me llamo Ángel, soy de Buenos Aires, Argentina. Hacia el 2022, comencé a desarrollarme en el mundo de la programación, iniciándome en el desarrollo web. Desde entonces, emprendí el camino sin dejar de aprender en esta gran profesión.
+          <Code
+          className='parrafo-mi00'
+          
+          
+          >Me llamo Ángel, soy de Buenos Aires, Argentina. 
+             </Code><br />
+             <blockquote></blockquote>
+        <Code 
+        className='parrafo-mi01'
+        >Hacia el 2022, comencé adesarrollarme en el mundo de la programación, iniciándome en el desarrollo web.</Code> <br /> 
+        <blockquote></blockquote>
+          <Code
+          className='parrafo-mi02'
+            
+            
+          >Desde entonces, emprendí el camino sin dejar de aprender en esta gran profesión.</Code>
           <blockquote></blockquote>
         
-          Durante el 2023, inicié mis estudios para lograr obtener el título de licenciado en desarrollo de software.
+        <Code
+        className='parrafo-mi03'
+          
+        >  Durante el 2023, inicié mis estudios para lograr obtener el título de licenciado en desarrollo de software.</Code>
     <blockquote></blockquote>
-          Me encanta tocar la 🎸, el aprendizaje tecnológico 👨‍💻, la música 🎵 y el rock 🤘.
+          <Code 
+          className='parrafo-mi04'
+          >Me encanta tocar la 🎸, programar 👨‍💻, la música 🎵 y el rock 🤘.</Code>
           <blockquote></blockquote>
-            <strong>
-            Sin duda, puedes enviarme un mensaje por <a href="https://api.whatsapp.com/send?phone=+5401124553394&text=¡Hola Ángel! Quiero contactar contigo." target="_blank" rel="noopener noreferrer"><b style={{color:'#477317'}}>WhatsApp 📱</b></a> o visitar la sección de <Link to={'/contact'}><b style={{color:'#b6d47fab'}}>Contacto ✉️</b></Link>.
-            </strong>
         </p>
+          <div className="datos">
+            <Code
+            
+            className='h5'
+
+            >
+              <h5>Mis datos de contacto son </h5>
+              <div className="contacto-mi">
+              <a href="https://api.whatsapp.com/send?phone=+5401124553394&text=Hola Angel! Quiero contactar con vos!.
+" target="_blank" rel="noopener noreferrer">
+  <img src={icons[3].wsp} alt=""className='img-mi' />
+</a>
+<Link
+to={'/contact'}
+className='span'
+>
+<img src={icons[6].mail} alt="" className='img-mi'/>
+</Link>
+              </div>
+            </Code>
+          </div>
       </Container>
     </>
   )

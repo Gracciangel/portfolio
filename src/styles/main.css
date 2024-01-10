@@ -2,6 +2,9 @@
     *{
         color: black;
     }
+    button{
+        color: white;
+    }
     h1{
         text-align:center;
 
@@ -13,6 +16,7 @@
         font-family: monospace;
         padding: 2rem 0;
     }
+
 }
 .chakra-ui-dark{
     background-color: rgb(25, 35, 46);
@@ -35,5 +39,6 @@
         font-family: monospace;
         padding: 2rem 0;
     }
+    
     
 }

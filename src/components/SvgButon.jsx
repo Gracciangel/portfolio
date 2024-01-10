@@ -18,9 +18,10 @@ export const SvgButon = ({cb , state}) => {
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none"
         
         onClick={cb}
-        className ={!state ? 'closed' : 'open'}    
+        className ={state ? 'closed' : 'open'}    
         id='menu'   
         >
+          {console.log(state)}
   <line y1="-1" x2="23.0217" y2="-1" transform={!state ? lin1c : lin1a} stroke={theme == 'light' ? 'black': "white"} stroke-width="1"
   className="line1"
   />

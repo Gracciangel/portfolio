@@ -78,3 +78,47 @@ h1{
 .me{
 	margin-bottom: 3%;	
 }
+/* sobre mi  */
+
+.parrafo-mi{
+	font-family: monospace;
+	opacity: 80%;
+	width: 100%;
+	margin: 5% auto;
+	.chakra-code{
+		text-align: center;
+		text-indent: 3%;
+		width: 100%;
+		font-size: 100%;
+		
+	}
+}
+
+div{
+	.h5{
+		background-color: rgba(5, 6, 7, 0.952);
+		width: 90%;
+		margin: auto 7vw;
+		h5{
+			margin-top: 2%;
+			color: white;
+			text-align: center;
+		}
+	}
+	
+}
+.contacto-mi{
+	padding: 1%;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5%;
+	.img-mi{
+		width: 40px;
+	}
+}
+	.span:hover{
+		color: white;
+	}
+.img-me{
+	width: 20px;
+}

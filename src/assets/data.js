@@ -129,6 +129,9 @@ export const icons=[
     },
     {
         menu: '../imgs/menu.png'
+    },
+    {
+        mail:'../imgs/email.png'
     }
 ]
 

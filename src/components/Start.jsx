@@ -51,25 +51,27 @@ useEffect(()=>{
     {
         showBtn && (
         
-            <Link
+
+<Link
             
-        to={'/home'}
-        >
-            <motion.div
-             initial={{opacity: 0}}
-             animate={{
-                opacity: 1
-             }}
-             transition={{
-                delay: .3
-             }}
+            to={'/home'}
             >
-                <button
-                className="btnStart">
-                Empezar
-            </button>
-                    </motion.div>
-        </Link>
+                <motion.div
+                 initial={{opacity: 0}}
+                 animate={{
+                    opacity: 1
+                 }}
+                 transition={{
+                    delay: .3
+                 }}
+                >
+                    <button
+                    className="btnStart">
+                    Empezar
+                </button>
+                        </motion.div>
+            </Link>
+        
         
         )
     }
