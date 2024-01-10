@@ -6,20 +6,25 @@
 }
 .ps-menu-label{
     color: rgb(127, 122, 122);
+    font-style: italic;
+    font-family: monospace
 }
 #menu{   
     width: 45px;
     height: 30px;
     transition: .5s;
+    
     &:hover{
         cursor: pointer;
     }
+    
 }
 .submenu{
     display: flex;
     flex-direction: column;
     .submenu-menu{
         display: flex;
+
     img{
         width: 45px;
         filter: grayscale(70);
