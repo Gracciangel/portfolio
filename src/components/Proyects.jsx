@@ -27,7 +27,7 @@ export const Proyects = () => {
         <Code
         width='100%'
         textAlign='center'
-        colorScheme='yellow'
+       bg='white.400'
         >  <h3>{
           <Typewriter
           onInit={(typewriter) => 

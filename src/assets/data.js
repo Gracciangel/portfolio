@@ -1,3 +1,10 @@
+const js =  '../imgs/js.png'
+const html =  '../imgs/html.png' 
+const py =  '../imgs/piton.png'
+const net =  '../imgs/net.webp'
+const sass =  '../imgs/sass.webp'
+const css =  '../imgs/css.png'
+const react = '../imgs/react.png'
 export const tech = [
     {
         id: "js",
@@ -30,16 +37,6 @@ export const tech = [
         nombre: "HTML"
     },
     {
-        id: 'python',
-        route: '../imgs/piton.png',
-        nombre: 'Python'
-    },
-    {
-        id: 'java',
-        route: '../imgs/java.png',
-        nombre: "Java"
-    },
-    {
         id: "sass",
         route: '../imgs/sass.webp',
         nombre: "Sass"
@@ -58,16 +55,20 @@ export const tech = [
         id: 'ts',
         route : '../imgs/ts.webp',
         nombre : 'Typescript'
+    },
+    {
+        id: 'net',
+        route: net,
+        nombre:'.NET'
+    },
+    {
+        id:'sql',
+        route: '../imgs/sql.webp',
+        nombre:'Sql'
     }
 
 ]
-const js =  '../imgs/js.png'
-const html =  '../imgs/html.png' 
-const py =  '../imgs/piton.png'
-const java =  '../imgs/java.png'
-const sass =  '../imgs/sass.webp'
-const css =  '../imgs/css.png'
-const react = '../imgs/react.png'
+
 
 
 export const proyectos = [

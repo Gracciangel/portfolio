@@ -1,12 +1,12 @@
 .perfil {
     width: 200px;
-    transition: .5s;
-    transform: rotateY(5deg);
+    transition: 1s;
+
 }
 .perfil2{
-    transition: .5s;
+    transition: 1s;
     width: 200px;
-    transform: rotateY(58deg);
+    filter: grayscale(1);
 }
 
 .perfil:hover {
@@ -79,7 +79,7 @@
     margin-top: 2%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:flex-end;
 
 }
 

@@ -15,7 +15,6 @@ export const App = () => {
   
   const storageIdioma = localStorage.getItem('idioma')
   
-  console.log(storageIdioma)
   return (
     <Container>
 

@@ -16,7 +16,7 @@ export const Aboutme = () => {
         <Code
           width='100%'
           textAlign='center'
-          bg='blue.400'
+          bg='white.400'
           className='me'
         >
             <h3>{
@@ -62,25 +62,7 @@ export const Aboutme = () => {
           <blockquote></blockquote>
         </p>
           <div className="datos">
-            <Code
-            
-            className='h5'
-
-            >
-              <h5>Mis datos de contacto son </h5>
-              <div className="contacto-mi">
-              <a href="https://api.whatsapp.com/send?phone=+5401124553394&text=Hola Angel! Quiero contactar con vos!.
-" target="_blank" rel="noopener noreferrer">
-  <img src={icons[3].wsp} alt=""className='img-mi' />
-</a>
-<Link
-to={'/contact'}
-className='span'
->
-<img src={icons[6].mail} alt="" className='img-mi'/>
-</Link>
-              </div>
-            </Code>
+    
           </div>
       </Container>
     </>

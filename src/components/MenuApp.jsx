@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 import { icons } from '../assets/data';
 import { Menu, Sidebar, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { Perfil } from './Perfil'
-import { SvgButon } from './SvgButon';
 //---------------------
 import '../styles/menu.css';
 import '../styles/images.css'
 import '../styles/general.css'
+import { SvgButon } from './SvgButon';
 
 
 

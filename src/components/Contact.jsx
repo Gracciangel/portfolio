@@ -1,4 +1,4 @@
-import React, { useState } from 'react' ;
+
 import Container from 'react-bootstrap/esm/Container';
 import '../styles/general.css' ;
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -18,7 +18,7 @@ export const Contact = () => {
     <Code
     width='100%'
     textAlign='center'
-    bg='red.400'
+    bg='white.400'
     >
       <h3>{
                   <Typewriter
